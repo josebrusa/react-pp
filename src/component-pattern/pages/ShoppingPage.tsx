@@ -2,7 +2,7 @@ import {
     ProductButton,
     ProductCard,
     ProductImage,
-    ProductTilte,
+    ProductTitle,
 } from "../components/ProductCard";
 
 const product = {
@@ -24,14 +24,14 @@ export const ShoppingPage = () => {
                 }}
             >
                 <ProductCard product={product}>
+                    <ProductCard.Image />
+                    <ProductCard.Title title={"Hola Mundo"} />
+                    <ProductCard.Buttons />
+                </ProductCard>
+                <ProductCard product={product}>
                     <ProductImage />
-                    <ProductTilte title={""} />
-                    <ProductButton
-                        increaseBy={function (value: number): void {
-                            throw new Error("Function not implemented.");
-                        }}
-                        counter={0}
-                    />
+                    <ProductTitle />
+                    <ProductButton />
                 </ProductCard>
             </div>
         </div>
