@@ -1,4 +1,9 @@
-import { ProductCard } from "../components/ProductCard";
+import {
+    ProductButton,
+    ProductCard,
+    ProductImage,
+    ProductTilte,
+} from "../components/ProductCard";
 
 const product = {
     id: "1",
@@ -18,7 +23,16 @@ export const ShoppingPage = () => {
                     flexDirection: "row",
                 }}
             >
-                <ProductCard product={product} />
+                <ProductCard product={product}>
+                    <ProductImage />
+                    <ProductTilte title={""} />
+                    <ProductButton
+                        increaseBy={function (value: number): void {
+                            throw new Error("Function not implemented.");
+                        }}
+                        counter={0}
+                    />
+                </ProductCard>
             </div>
         </div>
     );
