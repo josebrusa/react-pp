@@ -27,21 +27,21 @@ const Lazy3 = lazy(
 
 export const routes: Route[] = [
     {
-        to: "/Shopping",
-        path: "Shopping",
+        to: "/store",
+        path: "store",
         Component: ShoppingPage,
-        name: "Shopping-store",
+        name: "Store",
     },
     {
-        to: "/lazy2",
-        path: "lazy2",
+        to: "/about",
+        path: "about",
         Component: Lazy2,
-        name: "lazy-2",
+        name: "About",
     },
     {
-        to: "/lazy3",
-        path: "lazy3",
+        to: "/users",
+        path: "users",
         Component: Lazy3,
-        name: "lazy-3",
+        name: "Users",
     },
 ];
