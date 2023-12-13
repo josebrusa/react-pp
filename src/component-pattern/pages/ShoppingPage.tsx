@@ -5,6 +5,8 @@ import {
     ProductTitle,
 } from "../components";
 
+import "../styles/custom-styles.css";
+
 const product = {
     id: "1",
     title: "coffe mug - Card",
@@ -23,15 +25,15 @@ export const ShoppingPage = () => {
                     flexDirection: "row",
                 }}
             >
-                <ProductCard product={product}>
-                    <ProductCard.Image />
-                    <ProductCard.Title title={"Hola Mundo"} />
-                    <ProductCard.Button />
+                <ProductCard product={product} className="bg-dark text-white">
+                    <ProductCard.Image className="custom-image" />
+                    <ProductCard.Title className="text-white" />
+                    <ProductCard.Button className="custom-buttons" />
                 </ProductCard>
-                <ProductCard product={product}>
-                    <ProductImage />
-                    <ProductTitle />
-                    <ProductButton />
+                <ProductCard product={product} className="bg-dark text-white">
+                    <ProductImage className="custom-image" />
+                    <ProductTitle className="text-white" />
+                    <ProductButton className="custom-buttons" />
                 </ProductCard>
             </div>
         </div>

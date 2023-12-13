@@ -4,7 +4,12 @@ import styles from "../styles/styles.module.css";
 import { useContext } from "react";
 import { ProductContext } from "./ProductCard";
 
-export const ProductImage = ({ img = "" }) => {
+export interface Props {
+    className?: string;
+    img?: string;
+}
+
+export const ProductImage = ({ img = "", className }: Props) => {
     const { product } = useContext(ProductContext);
     let imgToShow: string;
     if (img) {
@@ -16,7 +21,7 @@ export const ProductImage = ({ img = "" }) => {
     }
     return (
         <img
-            className={styles.productImg}
+            className={`${styles.productImg} ${className}`}
             src={imgToShow}
             alt="Product Image"
         />
