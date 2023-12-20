@@ -1,6 +1,6 @@
 import styles from "../styles/styles.module.css";
 import useProduct from "../hooks/useProduct";
-import { CSSProperties, ReactElement, createContext } from "react";
+import { CSSProperties, createContext } from "react";
 import {
     ProductContextProps,
     Product,
@@ -13,7 +13,6 @@ export const ProductContext = createContext({} as ProductContextProps);
 const { Provider } = ProductContext;
 
 export interface Props {
-    // children?: ReactElement | ReactElement[];
     children: (args: ProductCardHandlers) => JSX.Element;
     product: Product;
     className?: string;
