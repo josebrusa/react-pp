@@ -26,3 +26,7 @@ export interface ProductCardHOCProps {
     Image: (Props: ProdictImageProps) => JSX.Element;
     Button: (Props: ProductButtonsProps) => JSX.Element;
 }
+
+export interface ProductInCart extends Product {
+    count: number;
+}
