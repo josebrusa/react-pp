@@ -2,9 +2,7 @@ import { Formik, Form } from "formik";
 import * as Yup from "yup";
 
 import "../styles/styles.css";
-import { MyTextInput } from "../components/MyTextInput";
-import { MySelect } from "../components/MySelect";
-import { MyCheckbox } from "../components/MyCheckbox";
+import { MyTextInput, MyCheckbox, MySelect } from "../components/";
 
 export const FormikAbstraction = () => {
     return (
@@ -50,13 +48,13 @@ export const FormikAbstraction = () => {
                         />
                         <MyTextInput
                             label="Apellido"
-                            name="LastName"
+                            name="lastName"
                             placeholder="Applesid"
                         />
                         <MyTextInput
                             label="Correo electronico"
                             name="email"
-                            type="emali"
+                            type="email"
                             placeholder="josea@applesid.com"
                         />
 
