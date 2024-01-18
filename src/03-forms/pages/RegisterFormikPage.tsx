@@ -39,18 +39,34 @@ export const RegisterFormikPage = () => {
                         .required("Requerido"),
                 })}
             >
-                {(formik) => (
+                {({handleReset}) => (
                     <Form>
                         <MyTextInput
                             label="Nombre"
-                            name="nombre"
+                            name="name"
                             placeholder="jose"
+                        />
+                        <MyTextInput
+                            label="Correo"
+                            name="email"
+                            placeholder="jose@test.com"
+                        />
+
+                        <MyTextInput
+                            label="Password"
+                            name="password1"
+                            placeholder="*******"
+                        />
+                        <MyTextInput
+                            label="Repeat Password"
+                            name="password2"
+                            placeholder="********"
                         />
 
                         <button type="submit">Create</button>
-                        {/* <button type="button" onClick={resetForm}>
+                        <button type="button" onClick={handleReset}>
                             Reset
-                        </button> */}
+                        </button>
                     </Form>
                 )}
             </Formik>
