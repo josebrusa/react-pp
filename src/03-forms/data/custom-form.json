@@ -1,0 +1,9 @@
+[
+    {
+        "type": "input",
+        "name": "firstName",
+        "placeholder": "Jose",
+        "label": "First Name",
+        "value": ""
+    }
+]
