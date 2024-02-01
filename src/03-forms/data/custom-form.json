@@ -2,7 +2,7 @@
 	{
 		"type": "input",
 		"name": "firstName",
-		"placeholder": "jonH",
+		"placeholder": "jonh",
 		"label": "First Name",
 		"value": "",
 		"validations": [
